@@ -1,0 +1,44 @@
+$rojopastel:#ec5151;
+$naranjaintenso:#e78931;
+$naranjapastel:#eeb682;
+$verdepastel:#99ffb3;
+/* Estilo de pagina-destacados*/
+.maindestacados{
+    margin: 10px;
+    border:8px;
+    padding:15px ;
+    background-color:$naranjapastel;
+    border-style: solid;
+    border-color:$naranjaintenso;
+    background:linear-gradient(to right,$naranjaintenso, $naranjapastel, $naranjapastel, $naranjaintenso);
+    border-radius:5%;
+    h1{
+        color:$verdepastel;
+        text-align: center;
+    }
+    h2{
+        padding:15px;
+        text-align:center;
+        font-family:'Lobster', cursive ;
+        color:#ffffff;
+    }
+    .imagenesdestacadas{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    .fdestacados{ 
+        width:300px;
+       height:280px;
+        border: 5px solid rgb(153, 255, 179);
+        border-radius: 20px;
+        opacity: .6;
+        transition: all 2s;
+        &:hover{
+            transform:scale(1.1, 1.1);
+            opacity:1;
+            border: solid 5px white;
+            border-radius: 20px;}
+    }
+}

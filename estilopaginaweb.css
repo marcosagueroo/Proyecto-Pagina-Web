@@ -25,7 +25,7 @@ nav .menu{
     list-style: none;
     padding: 0;
     margin: 0;
-    background:linear-gradient(to right,rgb(236, 81, 81),rgb(231, 137, 49),rgb(236, 81, 81));
+    background:linear-gradient(to right,#ec5151,#e78931,rgb(236, 81, 81));
     display: flex;
     justify-content: flex-end;
 }
@@ -36,7 +36,7 @@ nav .menu{
     display: block;
 }
 nav li a:hover{
-    background-color:rgb(153, 255, 179);
+    background-color:#99ffb3;
     color:rgb(255, 255, 255);
     transform:scale(1.1, 1.1);
     font-weight: bold;
@@ -66,11 +66,11 @@ nav li a:hover{
     border:8px;
     padding:18px ;
     text-align: center;
-    background-color:rgb(238, 182, 130);
+    background-color:#eeb682;
     border-style: solid;
     border-color:rgb(231, 137, 49);
     border-radius:5%;
-    background:linear-gradient(to right,rgb(231, 137, 49),rgb(238, 182, 130), rgb(238, 182, 130), rgb(231, 137, 49) );
+    background:linear-gradient(to right,#e78931,rgb(238, 182, 130), rgb(238, 182, 130), rgb(231, 137, 49) );
     font-family: 'Righteous', cursive;
     font-size: medium;
     color: white;

@@ -1,0 +1,62 @@
+$rojopastel:#ec5151;
+$naranjaintenso:#e78931;
+$naranjapastel:#eeb682;
+$verdepastel:#99ffb3;
+$verdemilitar:#375032;
+$verdesutil: #e9ffbf;
+/*Estilo de pagina-productos*/
+.mainproductos{
+    background-image:url("http://127.0.0.1:5500/MEDIA/IMAGENES/logo%20marca/apple-touch-icon.png");
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center ;
+    h2{
+        font-family: 'Lobster', cursive;
+        color:$verdepastel;
+        padding-bottom: 8px;
+    }
+    .sproductos{
+        margin:15px;
+        border:8px;
+        padding:25px ;
+        border-radius: 5%;
+        text-align: center;
+        background-color:$naranjapastel;
+        border-style: solid;
+        border-color:$naranjaintenso;
+        background:linear-gradient(to right,$naranjaintenso, $naranjapastel, $naranjapastel, $naranjaintenso);
+        .listadproductos{
+            color: #ffffff;
+            h3{
+                font-family: 'Lobster', cursive;
+                color:$rojopastel;
+                padding-bottom: 8px;
+            }
+        }
+    }
+    .precios{
+        margin:15px;
+        border:8px;
+        padding:20px ;
+        border-radius: 5%;
+        background-color:$naranjapastel;
+        border-style: solid;
+        border-color:$naranjaintenso;
+        background:linear-gradient(to right,$naranjaintenso, $naranjapastel,$naranjapastel, $naranjaintenso);
+        h2{
+           padding-bottom: 8px;
+           text-align: center;
+        }
+        .tablaprecios{
+                background-color:$verdesutil;
+                color:$verdemilitar;
+                border: 5px;
+                border-radius: 5%;
+                border-color:$rojopastel;
+                border-style: solid;
+                padding: 10px;
+                text-align: center;
+            }
+    }        
+}

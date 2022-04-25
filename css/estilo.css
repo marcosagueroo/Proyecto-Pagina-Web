@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Body general para todas las paginas*/
+body {
+  font-family: 'Righteous', cursive;
+  color: #000000;
+  background-color: #ffffff; }
+
+/*Header con barra de navegacion para todas las paginas*/
+.headernav {
+  text-align: center; }
+  .headernav nav {
+    padding: 0.5rem; }
+  .headernav .nombremarca {
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    color: #99ffb3;
+    padding: 7px; }
+  .headernav .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #ec5151, #e78931, #ec5151);
+    display: flex;
+    justify-content: flex-end; }
+  .headernav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block; }
+    .headernav a:hover {
+      background-color: #99ffb3;
+      color: #ffffff;
+      transform: scale(1.1, 1.1);
+      font-weight: bold; }
+
+/*Footer general para todas las paginas*/
+footer {
+  border: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #99ffb3;
+  background: linear-gradient(to right, #ec5151, #e78931, #ec5151); }
+
+/*Estilo de index-Home Pagina*/
+.bodyindex {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  grid-template-areas: "headernav headernav headernav headernav" "main main main main" "main main main main" "footer footer footer footer"; }
+  .bodyindex .headernav {
+    grid-area: headernav; }
+  .bodyindex .footer {
+    grid-area: footer; }
+
+.contenedormainindex {
+  grid-area: main;
+  margin: 10px;
+  border: 8px;
+  padding: 18px;
+  text-align: center;
+  background-color: #eeb682;
+  border-style: solid;
+  border-color: #e78931;
+  border-radius: 5%;
+  background: linear-gradient(to right, #e78931, #eeb682, #eeb682, #e78931);
+  font-family: 'Righteous', cursive;
+  font-size: medium;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+  column-gap: 10px;
+  grid-template-areas: "enlace enlace enlace" "imagen1 texto1 texto1" "texto2 texto2 imagen2";
+  justify-items: center;
+  align-items: center; }
+  .contenedormainindex a {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    color: #99ffb3; }
+  .contenedormainindex .enlace {
+    grid-area: enlace; }
+  .contenedormainindex .imagencookie {
+    grid-area: imagen1; }
+  .contenedormainindex .textocookie {
+    grid-area: texto1; }
+  .contenedormainindex .textoapple {
+    grid-area: texto2; }
+  .contenedormainindex .imagenapple {
+    grid-area: imagen2; }
+  .contenedormainindex .imagenesindex {
+    border-radius: 50%;
+    transition: all 1s; }
+    .contenedormainindex .imagenesindex:hover {
+      transform: scale(1.05, 1.05); }
+
+/* Estilo de pagina-destacados*/
+.maindestacados {
+  margin: 10px;
+  border: 8px;
+  padding: 15px;
+  background-color: #eeb682;
+  border-style: solid;
+  border-color: #e78931;
+  background: linear-gradient(to right, #e78931, #eeb682, #eeb682, #e78931);
+  border-radius: 5%; }
+  .maindestacados h1 {
+    color: #99ffb3;
+    text-align: center; }
+  .maindestacados h2 {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: #ffffff; }
+  .maindestacados .imagenesdestacadas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .maindestacados .fdestacados {
+    width: 300px;
+    height: 280px;
+    border: 5px solid #99ffb3;
+    border-radius: 20px;
+    opacity: .6;
+    transition: all 2s; }
+    .maindestacados .fdestacados:hover {
+      transform: scale(1.1, 1.1);
+      opacity: 1;
+      border: solid 5px white;
+      border-radius: 20px; }
+
+/*Estilo de pagina-productos*/
+.mainproductos {
+  background-image: url("http://127.0.0.1:5500/MEDIA/IMAGENES/logo%20marca/apple-touch-icon.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .mainproductos h2 {
+    font-family: 'Lobster', cursive;
+    color: #99ffb3;
+    padding-bottom: 8px; }
+  .mainproductos .sproductos {
+    margin: 15px;
+    border: 8px;
+    padding: 25px;
+    border-radius: 5%;
+    text-align: center;
+    background-color: #eeb682;
+    border-style: solid;
+    border-color: #e78931;
+    background: linear-gradient(to right, #e78931, #eeb682, #eeb682, #e78931); }
+    .mainproductos .sproductos .listadproductos {
+      color: #ffffff; }
+      .mainproductos .sproductos .listadproductos h3 {
+        font-family: 'Lobster', cursive;
+        color: #ec5151;
+        padding-bottom: 8px; }
+  .mainproductos .precios {
+    margin: 15px;
+    border: 8px;
+    padding: 20px;
+    border-radius: 5%;
+    background-color: #eeb682;
+    border-style: solid;
+    border-color: #e78931;
+    background: linear-gradient(to right, #e78931, #eeb682, #eeb682, #e78931); }
+    .mainproductos .precios h2 {
+      padding-bottom: 8px;
+      text-align: center; }
+    .mainproductos .precios .tablaprecios {
+      background-color: #e9ffbf;
+      color: #375032;
+      border: 5px;
+      border-radius: 5%;
+      border-color: #ec5151;
+      border-style: solid;
+      padding: 10px;
+      text-align: center; }
+
+/*Estilo de pagina-nosotros*/
+.bodynosotros {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  grid-template-areas: "headernav headernav headernav headernav" "main main main main" "main main main main" "footer footer footer footer"; }
+  .bodynosotros .headernav {
+    grid-area: headernav; }
+  .bodynosotros .footer {
+    grid-area: footer; }
+  .bodynosotros .mainnosotros {
+    grid-area: main;
+    margin: 10px;
+    border: 8px;
+    padding: 20px;
+    background-color: #eeb682;
+    border-style: solid;
+    border-color: #e78931;
+    border-radius: 5%;
+    background: linear-gradient(to right, #e78931, #eeb682, #eeb682, #e78931);
+    font-family: 'Righteous', cursive;
+    font-size: medium;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "titulo titulo titulo titulo" "imagen1 imagen1 imagen1 imagen1" "texto1 texto1 imagen2 imagen2" "imagen3 imagen3 imagen3 texto2";
+    gap: 10px;
+    justify-items: stretch;
+    align-items: center; }
+    .bodynosotros .mainnosotros .titulonosotros {
+      padding: 15px;
+      grid-area: titulo;
+      font-family: 'Lobster', cursive;
+      color: #99ffb3;
+      font-size: x-large; }
+    .bodynosotros .mainnosotros .imagennosotros2 {
+      grid-area: imagen1; }
+    .bodynosotros .mainnosotros .bordeimagen1 {
+      border: solid 5px #ffffff2f;
+      border-radius: 20px; }
+    .bodynosotros .mainnosotros .textonosotros1 {
+      grid-area: texto1;
+      padding: 20px;
+      text-align: center;
+      font-size: large; }
+      .bodynosotros .mainnosotros .textonosotros1 .quienessomos {
+        font-family: 'Lobster', cursive;
+        color: #99ffb3; }
+    .bodynosotros .mainnosotros .imagennosotros1 {
+      grid-area: imagen2; }
+      .bodynosotros .mainnosotros .imagennosotros1 .bordeimagen {
+        border-radius: 100%; }
+    .bodynosotros .mainnosotros .imagennosotros3 {
+      grid-area: imagen3; }
+    .bodynosotros .mainnosotros .textonosotros2 {
+      padding: 25px;
+      grid-area: texto2;
+      text-align: center;
+      color: #ffffff;
+      background-color: #940505;
+      border-style: solid;
+      border-radius: 20%;
+      border-color: #eeb682;
+      background: linear-gradient(to right, #ff1d1d, #940505, #940505, #ff1d1d); }
+      .bodynosotros .mainnosotros .textonosotros2 .titulorojo {
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        color: #ff1d1d;
+        padding-bottom: 8px;
+        padding-top: 20px; }
+
+/*Estilo de pagina-redes*/
+.mainredes {
+  background-image: url("http://127.0.0.1:5500/MEDIA/IMAGENES/logo%20marca/apple-touch-icon.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .mainredes .redes {
+    margin: 10px;
+    border: 8px;
+    padding: 15px;
+    border-style: solid;
+    border-color: #99ffb3;
+    border-radius: 5%;
+    background: linear-gradient(to right, #e78931, #ec5151, #e78931);
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: #99ffb3;
+    letter-spacing: 5px; }
+  .mainredes .contacto {
+    margin: 10px;
+    border: 8px;
+    padding: 15px;
+    background-color: #ec5151;
+    border-style: solid;
+    border-color: #e78931;
+    border-radius: 5%;
+    background: linear-gradient(to top, #e78931, #ec5151, #e78931);
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color: #99ffb3;
+    text-align: center; }
+    .mainredes .contacto .formularioc {
+      margin: 20px;
+      border: 10px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      border-style: ridge;
+      font-family: 'Righteous', cursive;
+      color: #000000; }
+      .mainredes .contacto .formularioc legend {
+        margin: 20px;
+        border: 10px;
+        padding: 20px; }
+
+@media screen and (max-width: 600px) {
+  .contenedormainindex {
+    font-size: large;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+    row-gap: 20px;
+    column-gap: 10px;
+    grid-template-areas: "enlace enlace enlace" "imagen1 imagen1 imagen1" "texto1 texto1 texto1" "imagen2 imagen2 imagen2" "texto2 texto2 texto2"; }
+  .mainnosotros {
+    font-size: large;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "titulo titulo titulo titulo" "imagen1 imagen1 imagen1 imagen1" "texto1 texto1 texto1 texto1" "imagen2 imagen2 imagen3 imagen3" "texto2 texto2 texto2 texto2"; }
+  .mainproductos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; } }

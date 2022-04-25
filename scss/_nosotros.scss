@@ -1,0 +1,97 @@
+$rojopastel:#ec5151;
+$naranjaintenso:#e78931;
+$naranjapastel:#eeb682;
+$verdepastel:#99ffb3;
+/*Estilo de pagina-nosotros*/
+.bodynosotros{
+    display: grid;
+    grid-template-columns:repeat(4, auto);
+    grid-template-rows: repeat(4,auto);
+    gap: 10px;
+    grid-template-areas:
+    "headernav headernav headernav headernav"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer" ;
+    .headernav{
+        grid-area:headernav;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    .mainnosotros{
+        grid-area:main;
+        margin: 10px;
+        border:8px;
+        padding:20px ;
+        background-color:$naranjapastel;
+        border-style: solid;
+        border-color:$naranjaintenso;
+        border-radius:5%;
+        background:linear-gradient(to right,$naranjaintenso,$naranjapastel, $naranjapastel, $naranjaintenso );
+        font-family: 'Righteous', cursive;
+        font-size: medium;
+        color: #ffffff;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "titulo titulo titulo titulo"
+        "imagen1 imagen1 imagen1 imagen1"
+        "texto1 texto1 imagen2 imagen2"
+        "imagen3 imagen3 imagen3 texto2" ;
+        gap: 10px;
+        justify-items: stretch;
+        align-items: center;
+        .titulonosotros{
+            padding: 15px;
+            grid-area: titulo;
+            font-family: 'Lobster', cursive;
+            color:$verdepastel;
+            font-size:x-large;
+        }
+        .imagennosotros2{
+            grid-area: imagen1;
+        }
+        .bordeimagen1{
+            border: solid 5px #ffffff2f;
+            border-radius: 20px;
+        }
+        .textonosotros1{
+            grid-area: texto1;
+            padding: 20px;
+            text-align: center;
+            font-size: large;
+            .quienessomos{
+                font-family: 'Lobster', cursive;
+                color:$verdepastel;
+            }
+        }
+        .imagennosotros1{
+            grid-area: imagen2;
+            .bordeimagen{
+                border-radius: 100%;}
+        }
+        .imagennosotros3{
+            grid-area: imagen3;
+        }
+        .textonosotros2{
+            padding: 25px;
+            grid-area: texto2;
+            text-align: center;
+            color: #ffffff;
+            background-color:#940505 ;
+            border-style: solid;
+            border-radius: 20%;
+            border-color:$naranjapastel;
+            background: linear-gradient(to right, #ff1d1d, #940505, #940505,#ff1d1d );
+            .titulorojo{
+                text-align: center;
+                font-family: 'Lobster', cursive;
+                color:#ff1d1d;
+                padding-bottom: 8px;
+                padding-top: 20px;
+            }
+        }
+    }
+}
