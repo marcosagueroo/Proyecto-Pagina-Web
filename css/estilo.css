@@ -51,7 +51,10 @@ footer {
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(4, auto);
   gap: 10px;
-  grid-template-areas: "headernav headernav headernav headernav" "main main main main" "main main main main" "footer footer footer footer"; }
+  grid-template-areas: "headernav headernav headernav headernav"
+ "main main main main"
+ "main main main main"
+ "footer footer footer footer"; }
   .bodyindex .headernav {
     grid-area: headernav; }
   .bodyindex .footer {
@@ -76,7 +79,9 @@ footer {
   grid-template-rows: repeat(3, auto);
   row-gap: 20px;
   column-gap: 10px;
-  grid-template-areas: "enlace enlace enlace" "imagen1 texto1 texto1" "texto2 texto2 imagen2";
+  grid-template-areas: "enlace enlace enlace"
+ "imagen1 texto1 texto1"
+ "texto2 texto2 imagen2";
   justify-items: center;
   align-items: center; }
   .contenedormainindex a {
@@ -192,7 +197,10 @@ footer {
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(4, auto);
   gap: 10px;
-  grid-template-areas: "headernav headernav headernav headernav" "main main main main" "main main main main" "footer footer footer footer"; }
+  grid-template-areas: "headernav headernav headernav headernav"
+ "main main main main"
+ "main main main main"
+ "footer footer footer footer"; }
   .bodynosotros .headernav {
     grid-area: headernav; }
   .bodynosotros .footer {
@@ -213,7 +221,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "titulo titulo titulo titulo" "imagen1 imagen1 imagen1 imagen1" "texto1 texto1 imagen2 imagen2" "imagen3 imagen3 imagen3 texto2";
+    grid-template-areas: "titulo titulo titulo titulo"
+ "imagen1 imagen1 imagen1 imagen1"
+ "texto1 texto1 imagen2 imagen2"
+ "imagen3 imagen3 imagen3 texto2";
     gap: 10px;
     justify-items: stretch;
     align-items: center; }
@@ -305,19 +316,27 @@ footer {
         border: 10px;
         padding: 20px; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .contenedormainindex {
     font-size: large;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(5, auto);
     row-gap: 20px;
     column-gap: 10px;
-    grid-template-areas: "enlace enlace enlace" "imagen1 imagen1 imagen1" "texto1 texto1 texto1" "imagen2 imagen2 imagen2" "texto2 texto2 texto2"; }
+    grid-template-areas: "enlace enlace enlace"
+ "imagen1 imagen1 imagen1"
+ "texto1 texto1 texto1"
+ "imagen2 imagen2 imagen2"
+ "texto2 texto2 texto2"; }
   .mainnosotros {
     font-size: large;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "titulo titulo titulo titulo" "imagen1 imagen1 imagen1 imagen1" "texto1 texto1 texto1 texto1" "imagen2 imagen2 imagen3 imagen3" "texto2 texto2 texto2 texto2"; }
+    grid-template-areas: "titulo titulo titulo titulo"
+ "imagen1 imagen1 imagen1 imagen1"
+ "texto1 texto1 texto1 texto1"
+ "imagen2 imagen2 imagen3 imagen3"
+ "texto2 texto2 texto2 texto2"; }
   .mainproductos {
     text-align: center;
     display: flex;

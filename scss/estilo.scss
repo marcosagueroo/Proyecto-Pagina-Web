@@ -58,7 +58,7 @@ footer{
 @import "productos";
 @import "nosotros";
 @import "redes";
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
     .contenedormainindex{
         font-size: large;
         grid-template-columns:repeat(3, auto);
