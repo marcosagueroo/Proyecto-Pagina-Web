@@ -6,8 +6,9 @@ $verdemilitar:#375032;
 $verdesutil: #e9ffbf;
 /*Estilo de pagina-productos*/
 .mainproductos{
-    background-image:url("http://127.0.0.1:5500/MEDIA/IMAGENES/logo%20marca/apple-touch-icon.png");
+    background-image:url("http://127.0.0.1:5500/media/imagenes/logo%20marca/apple-touch-icon.png");
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content:center;
     align-items:center ;

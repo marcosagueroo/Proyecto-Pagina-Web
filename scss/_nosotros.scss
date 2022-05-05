@@ -2,6 +2,11 @@ $rojopastel:#ec5151;
 $naranjaintenso:#e78931;
 $naranjapastel:#eeb682;
 $verdepastel:#99ffb3;
+$estilosdecolor:(/*declaro mapa de color*/
+color1:#ff1d1d,
+color2:#940505,
+color3:#ffffff2f
+);
 /*Estilo de pagina-nosotros*/
 .bodynosotros{
     display: grid;
@@ -24,6 +29,8 @@ $verdepastel:#99ffb3;
         margin: 10px;
         border:8px;
         padding:20px ;
+        height: auto;
+        width: auto;
         background-color:$naranjapastel;
         border-style: solid;
         border-color:$naranjaintenso;
@@ -80,7 +87,7 @@ $verdepastel:#99ffb3;
             grid-area: texto2;
             text-align: center;
             color: #ffffff;
-            background-color:#940505 ;
+            background-color: map-get($estilosdecolor, color1);
             border-style: solid;
             border-radius: 20%;
             border-color:$naranjapastel;
@@ -88,7 +95,7 @@ $verdepastel:#99ffb3;
             .titulorojo{
                 text-align: center;
                 font-family: 'Lobster', cursive;
-                color:#ff1d1d;
+                color: map-get($estilosdecolor , color1 );
                 padding-bottom: 8px;
                 padding-top: 20px;
             }

@@ -22,10 +22,12 @@ $verdepastel:#99ffb3;
 }
 .contenedormainindex{ 
     grid-area: main;
+    height: auto;
+    width:auto;
     margin: 10px;
     border:8px;
     padding:18px ;
-    text-align: center;
+    text-align:center;
     background-color:$naranjapastel;
     border-style: solid;
     border-color:$naranjaintenso;
@@ -41,8 +43,8 @@ $verdepastel:#99ffb3;
     column-gap: 10px;
     grid-template-areas:
     "enlace enlace enlace"
-    "imagen1 texto1 texto1"
-    "texto2 texto2 imagen2" ;
+    "imagen1 imagen1 texto1"
+    "texto2 imagen2 imagen2" ;
     justify-items:center;
     align-items:center;
     a{
@@ -54,17 +56,20 @@ $verdepastel:#99ffb3;
     }
     .enlace{
         grid-area:enlace ;
+        font-size: xx-large;
     }
-    .imagencookie{
+    .imagenhuevo{
         grid-area: imagen1;
     }
-    .textocookie{
+    .textohuevo{
         grid-area: texto1;
+        font-size:x-large;
     }
-    .textoapple{
+    .textoavena{
         grid-area: texto2;
+        font-size:x-large;
     }
-    .imagenapple{
+    .imagenavena{
         grid-area: imagen2;
     }
     .imagenesindex{

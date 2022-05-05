@@ -75,19 +75,21 @@ footer{
     .mainnosotros{
         font-size: large;
         grid-template-columns: repeat(4, auto);
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(6, auto);
+        row-gap:20px ;
+        column-gap: 10px;
         grid-template-areas:
         "titulo titulo titulo titulo"
         "imagen1 imagen1 imagen1 imagen1"
         "texto1 texto1 texto1 texto1"
-        "imagen2 imagen2 imagen3 imagen3"
+        "imagen2 imagen2 imagen2 imagen2"
+        "imagen3 imagen3 imagen3 imagen3"
         "texto2 texto2 texto2 texto2" ;
     }
-    .mainproductos{
-        text-align: center;
-       display: flex;
-       flex-direction: column;
-       justify-content:space-around;
-       align-items:center ;
+    .nombremarca{
+        display: none;
+    }
+    .menu{
+        justify-content:space-around;
     }
 }

@@ -33,10 +33,10 @@ $verdepastel:#99ffb3;
        height:280px;
         border: 5px solid rgb(153, 255, 179);
         border-radius: 20px;
-        opacity: .6;
-        transition: all 2s;
+        opacity:.7;
+        transition: all 1.5s;
         &:hover{
-            transform:scale(1.1, 1.1);
+            transform:scale(1.05, 1.05);
             opacity:1;
             border: solid 5px white;
             border-radius: 20px;}
